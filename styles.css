@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #003366;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Custom styles for form elements */
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Table styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table th {
+  background-color: #f8f9fa;
+}
+
+/* Conditional inputs */
+.conditional-input {
+  margin-left: 2rem;
+}
+
+/* Custom radio and checkbox styles */
+.form-check {
+  margin-bottom: 0.5rem;
+}
+
+/* Textarea styles */
+textarea.form-control {
+  min-height: 100px;
+}
+
+/* Card styles */
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Make tables responsive on mobile */
+@media (max-width: 768px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

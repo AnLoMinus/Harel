@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Statement for Medical Insurance - Foreigners in Israel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <div class="header d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h2">Health Statement for Medical Insurance - Foreigners in Israel</h1>
+            <img src="harel-logo.png" alt="Harel Insurance Logo" class="logo">
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <p class="mb-2">Subject to the Insurance Application attached hereto, which is inseparable part of the
+                    Health Statement.</p>
+                <p>This Form is designed for men and women alike.<br>
+                    Please make sure that you fill out this Form accurately and completely.</p>
+                <p class="text-muted fst-italic">06/2024 Edition</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <p class="mb-0">Attn.<br>
+                    Harel Insurance Company Ltd. - Foreign Employees / Tourists Insurance Branch<br>
+                    3 Abba Hillel St., P.O. Box 1951, Ramat Gan 5211802, Fax: 03-7348083 email: fax7930@harel-ins.co.il
+                </p>
+            </div>
+        </div>
+
+        <form id="healthStatement">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="h4 mb-0">A. Particulars of the Insurance Applicant</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-4">
+                            <label for="passportNo" class="form-label">Passport No.</label>
+                            <input type="text" class="form-control" id="passportNo" name="passportNo" required>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <label class="form-label d-block">Sex</label>
+                            <div class="btn-group" role="group">
+                                <input type="radio" class="btn-check" name="sex" id="male" value="M" required>
+                                <label class="btn btn-outline-primary" for="male">M</label>
+                                <input type="radio" class="btn-check" name="sex" id="female" value="F">
+                                <label class="btn btn-outline-primary" for="female">F</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="h4 mb-0">Section A: General Questions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info">
+                        <p class="mb-0">In this Health Statement you should answer the following questions by marking
+                            "✓" on the column of the appropriate answer. If the answer to any of the questions is "Yes"
+                            you have to attach an up-to-date certificate from the attending physician, addressing the
+                            stated problem, test results, the manner of treatment and the current status.</p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 70%">Question</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="row g-2 align-items-center">
+                                            <div class="col-md-6">
+                                                <label class="form-label">1. Height in cm:</label>
+                                                <input type="number" class="form-control" name="height">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Weight in kg:</label>
+                                                <input type="number" class="form-control" name="weight">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td colspan="2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="narcotics"
+                                                    name="narcotics">
+                                                <label class="form-check-label" for="narcotics">2. Do you use, or have
+                                                    you been using narcotics?</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="alcohol"
+                                                    name="alcohol">
+                                                <label class="form-check-label" for="alcohol">Do you drink, or have you
+                                                    been drinking alcoholic beverages regularly?</label>
+                                            </div>
+                                            <div class="conditional-input">
+                                                <div class="input-group">
+                                                    <span class="input-group-text">Quantity:</span>
+                                                    <input type="text" class="form-control" name="alcoholQuantity">
+                                                    <span class="input-group-text">glasses per day</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question2" value="yes"
+                                                id="q2yes">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question2" value="no"
+                                                id="q2no">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-2">3. During the last 10 years, have you been referred to any of
+                                            the following examinations...</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name="examDetails"
+                                                style="height: 100px"></textarea>
+                                            <label>Additional details</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question3" value="yes"
+                                                id="q3yes">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question3" value="no"
+                                                id="q3no">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-2">4. Are you now, or have you been sometime during the last 10
+                                            years, about to undergo a surgery / transplantation? Please describe in
+                                            details:</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name="surgeryDetails"
+                                                style="height: 100px"></textarea>
+                                            <label>Surgery/transplantation details</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question4" value="yes"
+                                                id="q4yes">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question4" value="no"
+                                                id="q4no">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-2">5. During the last 10 years, have you been hospitalized? Please
+                                            describe in details the reason for hospitalization and the treatment that
+                                            you have received:</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name="hospitalizationDetails"
+                                                style="height: 100px"></textarea>
+                                            <label>Hospitalization details</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question5" value="yes"
+                                                id="q5yes">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question5" value="no"
+                                                id="q5no">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-2">6. During the last 10 years, have you been taking, or have you
+                                            received a recommendation to take, medications regularly? Please describe in
+                                            details the problem for which you are treated / have been treated, the
+                                            treatment, and for how long have you been taking the said medication?</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name="medicationDetails"
+                                                style="height: 100px"></textarea>
+                                            <label>Medication details</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question6" value="yes"
+                                                id="q6yes">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question6" value="no"
+                                                id="q6no">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="mb-2">7. Have you been diagnosed as suffering from any allergies?
+                                            Please describe in details:</p>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name="allergyDetails"
+                                                style="height: 100px"></textarea>
+                                            <label>Allergy details</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question7" value="yes"
+                                                id="q7yes">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="question7" value="no"
+                                                id="q7no">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="h4 mb-0">Section B: Medical Conditions</h3>
+                </div>
+                <div class="card-body">
+                    <p class="lead mb-4">Have you been diagnosed with any illness, syndrome, disorder related to one or
+                        more of the issues specified below:</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h4 class="h5 mb-0">1. Nervous System Conditions</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="nervousSystem"
+                                            name="conditions[]" value="nervousSystem">
+                                        <label class="form-check-label" for="nervousSystem">The nervous system</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="cerebrovascular"
+                                            name="conditions[]" value="cerebrovascular">
+                                        <label class="form-check-label" for="cerebrovascular">Cerebrovascular accident
+                                            (stroke)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="epilepsy"
+                                            name="conditions[]" value="epilepsy">
+                                        <label class="form-check-label" for="epilepsy">Epilepsy</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="multipleSclerosis"
+                                            name="conditions[]" value="multipleSclerosis">
+                                        <label class="form-check-label" for="multipleSclerosis">Multiple
+                                            sclerosis</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="muscularDystrophy"
+                                            name="conditions[]" value="muscularDystrophy">
+                                        <label class="form-check-label" for="muscularDystrophy">Muscular dystrophy or
+                                            other atrophic disease</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="dizziness"
+                                            name="conditions[]" value="dizziness">
+                                        <label class="form-check-label" for="dizziness">Reoccurring dizziness</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="headaches"
+                                            name="conditions[]" value="headaches">
+                                        <label class="form-check-label" for="headaches">Headaches</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="balanceDisorders"
+                                            name="conditions[]" value="balanceDisorders">
+                                        <label class="form-check-label" for="balanceDisorders">Balance disorders</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="fainting"
+                                            name="conditions[]" value="fainting">
+                                        <label class="form-check-label" for="fainting">Fainting</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="parkinsons"
+                                            name="conditions[]" value="parkinsons">
+                                        <label class="form-check-label" for="parkinsons">Parkinson's syndrome</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="alzheimers"
+                                            name="conditions[]" value="alzheimers">
+                                        <label class="form-check-label" for="alzheimers">Alzheimer's disease</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="trembling"
+                                            name="conditions[]" value="trembling">
+                                        <label class="form-check-label" for="trembling">Trembling</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="mentalRetardation"
+                                            name="conditions[]" value="mentalRetardation">
+                                        <label class="form-check-label" for="mentalRetardation">Mental
+                                            retardation</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="autism" name="conditions[]"
+                                            value="autism">
+                                        <label class="form-check-label" for="autism">Autism</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="downs" name="conditions[]"
+                                            value="downs">
+                                        <label class="form-check-label" for="downs">Down's syndrome</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="cerebralPalsy"
+                                            name="conditions[]" value="cerebralPalsy">
+                                        <label class="form-check-label" for="cerebralPalsy">Cerebral palsy</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="polio" name="conditions[]"
+                                            value="polio">
+                                        <label class="form-check-label" for="polio">Poliomyelitis (infantile
+                                            paralysis)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="gaucher" name="conditions[]"
+                                            value="gaucher">
+                                        <label class="form-check-label" for="gaucher">Gaucher's disease</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="numbness"
+                                            name="conditions[]" value="numbness">
+                                        <label class="form-check-label" for="numbness">Loss of sensation
+                                            (numbness)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="attentionDeficit"
+                                            name="conditions[]" value="attentionDeficit">
+                                        <label class="form-check-label" for="attentionDeficit">Attention deficit
+                                            disorders</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="migraine"
+                                            name="conditions[]" value="migraine">
+                                        <label class="form-check-label" for="migraine">Migraine</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="memoryDecline"
+                                            name="conditions[]" value="memoryDecline">
+                                        <label class="form-check-label" for="memoryDecline">Have you applied to a
+                                            physician with complaints regarding declined memory (dementia)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="aids" name="conditions[]"
+                                            value="aids">
+                                        <label class="form-check-label" for="aids">AIDS</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="hivCarrier"
+                                            name="conditions[]" value="hivCarrier">
+                                        <label class="form-check-label" for="hivCarrier">HIV carrier</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="lupus" name="conditions[]"
+                                            value="lupus">
+                                        <label class="form-check-label" for="lupus">Lupus</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h4 class="h5 mb-0">2. Eyes and Vision</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="cataract"
+                                            name="eyeConditions[]" value="cataract">
+                                        <label class="form-check-label" for="cataract">Cataract</label>
+                                    </div>
+                                    <div class="mt-3">
+                                        <label class="form-label">Other eye disease / problem:</label>
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="otherEyeDisease"
+                                                    value="no" id="noEyeDisease">
+                                                <label class="form-check-label" for="noEyeDisease">No</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="otherEyeDisease"
+                                                    value="yes" id="yesEyeDisease">
+                                                <label class="form-check-label" for="yesEyeDisease">Yes</label>
+                                            </div>
+                                            <input type="text" class="form-control" name="otherEyeDiseaseDetails"
+                                                placeholder="if 'Yes' please specify">
+                                        </div>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="retinaProblems"
+                                            name="eyeConditions[]" value="retinaProblems">
+                                        <label class="form-check-label" for="retinaProblems">Retina and cornea
+                                            problems</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="glaucoma"
+                                            name="eyeConditions[]" value="glaucoma">
+                                        <label class="form-check-label" for="glaucoma">Glaucoma</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="inflammations"
+                                            name="eyeConditions[]" value="inflammations">
+                                        <label class="form-check-label" for="inflammations">Inflammations of the
+                                            eye</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="strabismus"
+                                            name="eyeConditions[]" value="strabismus">
+                                        <label class="form-check-label" for="strabismus">Strabismus</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="blindness"
+                                            name="eyeConditions[]" value="blindness">
+                                        <label class="form-check-label" for="blindness">Blindness</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">3. Heart</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="cardiacArrhythmias"
+                                    name="heartConditions[]" value="cardiacArrhythmias">
+                                <label class="form-check-label" for="cardiacArrhythmias">Cardiac arrhythmias</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="heartDisease"
+                                    name="heartConditions[]" value="heartDisease">
+                                <label class="form-check-label" for="heartDisease">Heart disease</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="heartFailure"
+                                    name="heartConditions[]" value="heartFailure">
+                                <label class="form-check-label" for="heartFailure">Heart failure</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="heartAttack"
+                                    name="heartConditions[]" value="heartAttack">
+                                <label class="form-check-label" for="heartAttack">Heart attack</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="congenitalHeart"
+                                    name="heartConditions[]" value="congenitalHeart">
+                                <label class="form-check-label" for="congenitalHeart">Congenital heart defect</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="catheterization"
+                                    name="heartConditions[]" value="catheterization">
+                                <label class="form-check-label" for="catheterization">Catheterization</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Heart valve diseases, other heart disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherHeartDisease" value="no"
+                                            id="noHeartDisease">
+                                        <label class="form-check-label" for="noHeartDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherHeartDisease"
+                                            value="yes" id="yesHeartDisease">
+                                        <label class="form-check-label" for="yesHeartDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherHeartDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">4. Blood vessels</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="varicoseVein"
+                                    name="vesselConditions[]" value="varicoseVein">
+                                <label class="form-check-label" for="varicoseVein">Varicose vein (in the veins of the
+                                    legs)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="carotidArtery"
+                                    name="vesselConditions[]" value="carotidArtery">
+                                <label class="form-check-label" for="carotidArtery">Carotid artery (in the arteries of
+                                    the neck)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="coagulation"
+                                    name="vesselConditions[]" value="coagulation">
+                                <label class="form-check-label" for="coagulation">Coagulation disorders</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="dvt" name="vesselConditions[]"
+                                    value="dvt">
+                                <label class="form-check-label" for="dvt">Blood disease DVT (Thrombosis)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="pvd" name="vesselConditions[]"
+                                    value="pvd">
+                                <label class="form-check-label" for="pvd">PVD (Peripheral Vascular Disease)</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other vascular disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherVascularDisease"
+                                            value="no" id="noVascularDisease">
+                                        <label class="form-check-label" for="noVascularDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherVascularDisease"
+                                            value="yes" id="yesVascularDisease">
+                                        <label class="form-check-label" for="yesVascularDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherVascularDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">5. Metabolic diseases</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="thyroidGland"
+                                    name="metabolicConditions[]" value="thyroidGland">
+                                <label class="form-check-label" for="thyroidGland">Thyroid gland</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="lymphNode"
+                                    name="metabolicConditions[]" value="lymphNode">
+                                <label class="form-check-label" for="lymphNode">Lymph node</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="salivaryGland"
+                                    name="metabolicConditions[]" value="salivaryGland">
+                                <label class="form-check-label" for="salivaryGland">Salivary gland</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="sweatGland"
+                                    name="metabolicConditions[]" value="sweatGland">
+                                <label class="form-check-label" for="sweatGland">Sweat gland</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="pituitaryGland"
+                                    name="metabolicConditions[]" value="pituitaryGland">
+                                <label class="form-check-label" for="pituitaryGland">Pituitary gland</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="diabetes"
+                                    name="metabolicConditions[]" value="diabetes">
+                                <label class="form-check-label" for="diabetes">Diabetes</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="hypertension"
+                                    name="metabolicConditions[]" value="hypertension">
+                                <label class="form-check-label" for="hypertension">Hypertension</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="highFats"
+                                    name="metabolicConditions[]" value="highFats">
+                                <label class="form-check-label" for="highFats">High levels of fats / cholesterol</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other metabolic disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherMetabolicDisease"
+                                            value="no" id="noMetabolicDisease">
+                                        <label class="form-check-label" for="noMetabolicDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherMetabolicDisease"
+                                            value="yes" id="yesMetabolicDisease">
+                                        <label class="form-check-label" for="yesMetabolicDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherMetabolicDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">6. Respiratory system</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="asthma"
+                                    name="respiratoryConditions[]" value="asthma">
+                                <label class="form-check-label" for="asthma">Asthma</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="tuberculosis"
+                                    name="respiratoryConditions[]" value="tuberculosis">
+                                <label class="form-check-label" for="tuberculosis">Tuberculosis</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="copd" name="respiratoryConditions[]"
+                                    value="copd">
+                                <label class="form-check-label" for="copd">COPD (chronic obstructive pulmonary
+                                    disease)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="respiratoryInfections"
+                                    name="respiratoryConditions[]" value="respiratoryInfections">
+                                <label class="form-check-label" for="respiratoryInfections">Recurrent respiratory
+                                    infections and Shortness of breath</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="pneumothorax"
+                                    name="respiratoryConditions[]" value="pneumothorax">
+                                <label class="form-check-label" for="pneumothorax">Collapsed lung (Pneumothorax)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="cysticFibrosis"
+                                    name="respiratoryConditions[]" value="cysticFibrosis">
+                                <label class="form-check-label" for="cysticFibrosis">Cystic Fibrosis</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other respiratory system disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherRespiratoryDisease"
+                                            value="no" id="noRespiratoryDisease">
+                                        <label class="form-check-label" for="noRespiratoryDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherRespiratoryDisease"
+                                            value="yes" id="yesRespiratoryDisease">
+                                        <label class="form-check-label" for="yesRespiratoryDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherRespiratoryDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">7. Digestive system</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="ulcer" name="digestiveConditions[]"
+                                    value="ulcer">
+                                <label class="form-check-label" for="ulcer">Ulcer (duodenum / gastric)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="heartburn"
+                                    name="digestiveConditions[]" value="heartburn">
+                                <label class="form-check-label" for="heartburn">Heartburn</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="crohns" name="digestiveConditions[]"
+                                    value="crohns">
+                                <label class="form-check-label" for="crohns">Crohn's disease</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="colitis"
+                                    name="digestiveConditions[]" value="colitis">
+                                <label class="form-check-label" for="colitis">Colitis</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="reflux" name="digestiveConditions[]"
+                                    value="reflux">
+                                <label class="form-check-label" for="reflux">Reflux</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="hemorrhoids"
+                                    name="digestiveConditions[]" value="hemorrhoids">
+                                <label class="form-check-label" for="hemorrhoids">Hemorrhoids</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="fissureFistula"
+                                    name="digestiveConditions[]" value="fissureFistula">
+                                <label class="form-check-label" for="fissureFistula">Fissure / Fistula</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="bowelObstruction"
+                                    name="digestiveConditions[]" value="bowelObstruction">
+                                <label class="form-check-label" for="bowelObstruction">Bowel obstruction</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="pancreaticDiseases"
+                                    name="digestiveConditions[]" value="pancreaticDiseases">
+                                <label class="form-check-label" for="pancreaticDiseases">Pancreatic diseases /
+                                    infections</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="esophagus"
+                                    name="digestiveConditions[]" value="esophagus">
+                                <label class="form-check-label" for="esophagus">Esophagus</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="gallbladder"
+                                    name="digestiveConditions[]" value="gallbladder">
+                                <label class="form-check-label" for="gallbladder">Gallbladder</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="gallstones"
+                                    name="digestiveConditions[]" value="gallstones">
+                                <label class="form-check-label" for="gallstones">Gall-bladder stones</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other digestive system disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherDigestiveDisease"
+                                            value="no" id="noDigestiveDisease">
+                                        <label class="form-check-label" for="noDigestiveDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherDigestiveDisease"
+                                            value="yes" id="yesDigestiveDisease">
+                                        <label class="form-check-label" for="yesDigestiveDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherDigestiveDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">8. Liver</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="jaundice" name="liverConditions[]"
+                                    value="jaundice">
+                                <label class="form-check-label" for="jaundice">Jaundice</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="hepatitis" name="liverConditions[]"
+                                    value="hepatitis">
+                                <label class="form-check-label" for="hepatitis">Hepatitis B, C, D</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="fattyLiver" name="liverConditions[]"
+                                    value="fattyLiver">
+                                <label class="form-check-label" for="fattyLiver">Fatty liver</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="cirrhosis" name="liverConditions[]"
+                                    value="cirrhosis">
+                                <label class="form-check-label" for="cirrhosis">Cirrhosis</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other liver disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherLiverDisease" value="no"
+                                            id="noLiverDisease">
+                                        <label class="form-check-label" for="noLiverDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherLiverDisease"
+                                            value="yes" id="yesLiverDisease">
+                                        <label class="form-check-label" for="yesLiverDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherLiverDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">9. Hernia</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label">Location of the hernia:</label>
+                                <select class="form-select" name="herniaLocation">
+                                    <option value="">Select location</option>
+                                    <option value="diaphragm">In the diaphragm</option>
+                                    <option value="navel">In the navel</option>
+                                    <option value="rightGroin">In the right groin</option>
+                                    <option value="leftGroin">In the left groin</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Have you undergone a surgery to treat the hernia?</label>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="herniaSurgery" value="no"
+                                            id="noHerniaSurgery">
+                                        <label class="form-check-label" for="noHerniaSurgery">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="herniaSurgery" value="yes"
+                                            id="yesHerniaSurgery">
+                                        <label class="form-check-label" for="yesHerniaSurgery">Yes</label>
+                                    </div>
+                                    <input type="date" class="form-control" name="herniaSurgeryDate"
+                                        placeholder="When (date)?" style="max-width: 200px;">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Is the problem solved?</label>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="herniaSolved" value="no"
+                                            id="noHerniaSolved">
+                                        <label class="form-check-label" for="noHerniaSolved">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="herniaSolved" value="yes"
+                                            id="yesHerniaSolved">
+                                        <label class="form-check-label" for="yesHerniaSolved">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Kidney and urinary tract -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">10. Kidney and urinary tract</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="recurrentInfections"
+                                    name="kidneyConditions[]" value="recurrentInfections">
+                                <label class="form-check-label" for="recurrentInfections">Recurrent infections</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="kidneyStones"
+                                    name="kidneyConditions[]" value="kidneyStones">
+                                <label class="form-check-label" for="kidneyStones">Kidney and urinary stones</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="kidneyCysts"
+                                    name="kidneyConditions[]" value="kidneyCysts">
+                                <label class="form-check-label" for="kidneyCysts">Kidney cysts</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="urinaryAnomalies"
+                                    name="kidneyConditions[]" value="urinaryAnomalies">
+                                <label class="form-check-label" for="urinaryAnomalies">Anomalies of urinary
+                                    tract</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="renalFailure"
+                                    name="kidneyConditions[]" value="renalFailure">
+                                <label class="form-check-label" for="renalFailure">Renal failure</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other kidney and urinary tract disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherKidneyDisease"
+                                            value="no" id="noKidneyDisease">
+                                        <label class="form-check-label" for="noKidneyDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherKidneyDisease"
+                                            value="yes" id="yesKidneyDisease">
+                                        <label class="form-check-label" for="yesKidneyDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherKidneyDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Joints and bones -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">11. Joints and bones</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="arthritis" name="jointConditions[]"
+                                    value="arthritis">
+                                <label class="form-check-label" for="arthritis">Arthritis</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="gout" name="jointConditions[]"
+                                    value="gout">
+                                <label class="form-check-label" for="gout">Gout</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="backSpine" name="jointConditions[]"
+                                    value="backSpine">
+                                <label class="form-check-label" for="backSpine">Back / spine</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="joints" name="jointConditions[]"
+                                    value="joints">
+                                <label class="form-check-label" for="joints">Joints</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="knees" name="jointConditions[]"
+                                    value="knees">
+                                <label class="form-check-label" for="knees">Knees</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other joints and bones disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherJointDisease" value="no"
+                                            id="noJointDisease">
+                                        <label class="form-check-label" for="noJointDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherJointDisease"
+                                            value="yes" id="yesJointDisease">
+                                        <label class="form-check-label" for="yesJointDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherJointDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skin and sex diseases -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">12. Skin and sex diseases</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="skinTumors" name="skinConditions[]"
+                                    value="skinTumors">
+                                <label class="form-check-label" for="skinTumors">Skin tumors</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="skinLesions" name="skinConditions[]"
+                                    value="skinLesions">
+                                <label class="form-check-label" for="skinLesions">Skin lesions</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="psoriasis" name="skinConditions[]"
+                                    value="psoriasis">
+                                <label class="form-check-label" for="psoriasis">Psoriasis</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="std" name="skinConditions[]"
+                                    value="std">
+                                <label class="form-check-label" for="std">Sexually transmitted diseases</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="syphilis" name="skinConditions[]"
+                                    value="syphilis">
+                                <label class="form-check-label" for="syphilis">Syphilis</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other skin and sex diseases / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherSkinDisease" value="no"
+                                            id="noSkinDisease">
+                                        <label class="form-check-label" for="noSkinDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherSkinDisease" value="yes"
+                                            id="yesSkinDisease">
+                                        <label class="form-check-label" for="yesSkinDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherSkinDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Malignant tumors -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">13. Malignant tumors / diseases (cancer)</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-floating">
+                                <textarea class="form-control" name="cancerDetails" style="height: 100px"
+                                    placeholder="Please provide details"></textarea>
+                                <label>Please provide details about any malignant tumors or cancer</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gender-specific sections -->
+            <div class="row g-4 mt-4">
+                <!-- For women -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">14. For women</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="breasts" name="womenConditions[]"
+                                    value="breasts">
+                                <label class="form-check-label" for="breasts">Breasts (including breast
+                                    enlargement)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="gynecological"
+                                    name="womenConditions[]" value="gynecological">
+                                <label class="form-check-label" for="gynecological">Gynecological system, disease /
+                                    other feminine problem</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Are you pregnant?</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="pregnant" name="pregnant">
+                                    <label class="form-check-label" for="pregnant">Yes</label>
+                                </div>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Have you undergone a cesarean delivery?</label>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="cesareanDelivery" value="no"
+                                            id="noCesarean">
+                                        <label class="form-check-label" for="noCesarean">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="cesareanDelivery" value="yes"
+                                            id="yesCesarean">
+                                        <label class="form-check-label" for="yesCesarean">Yes</label>
+                                    </div>
+                                    <input type="date" class="form-control" name="cesareanDate"
+                                        placeholder="When (date)?" style="max-width: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For men -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">15. For men</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="prostateProblems"
+                                    name="menConditions[]" value="prostateProblems">
+                                <label class="form-check-label" for="prostateProblems">Prostate problems</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="varicoceleHydrocele"
+                                    name="menConditions[]" value="varicoceleHydrocele">
+                                <label class="form-check-label" for="varicoceleHydrocele">Varicocele / Hydrocele</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other masculine disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherMenDisease" value="no"
+                                            id="noMenDisease">
+                                        <label class="form-check-label" for="noMenDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherMenDisease" value="yes"
+                                            id="yesMenDisease">
+                                        <label class="form-check-label" for="yesMenDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherMenDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mental illnesses -->
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">16. Mental illnesses</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-3">Mental illness that was diagnosed by a psychologist, psychiatrist or family
+                                physician.</p>
+                            <div class="form-floating">
+                                <textarea class="form-control" name="mentalIllnessDetails" style="height: 100px"
+                                    placeholder="Please provide details"></textarea>
+                                <label>Please provide details about any mental illnesses</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nose, ear and throat diseases -->
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="h5 mb-0">17. Nose, ear and throat diseases</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="sleepApnea" name="entConditions[]"
+                                    value="sleepApnea">
+                                <label class="form-check-label" for="sleepApnea">Sleep apnea syndrome</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="nasalPolyp" name="entConditions[]"
+                                    value="nasalPolyp">
+                                <label class="form-check-label" for="nasalPolyp">Nasal polyp</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input type="checkbox" class="form-check-input" id="sinusitis" name="entConditions[]"
+                                    value="sinusitis">
+                                <label class="form-check-label" for="sinusitis">Sinusitis</label>
+                            </div>
+
+                            <div class="mt-3">
+                                <label class="form-label">Other nose, ear and throat disease / problem:</label>
+                                <div class="d-flex gap-3 align-items-center mb-2">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherENTDisease" value="no"
+                                            id="noENTDisease">
+                                        <label class="form-check-label" for="noENTDisease">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="otherENTDisease" value="yes"
+                                            id="yesENTDisease">
+                                        <label class="form-check-label" for="yesENTDisease">Yes</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="otherENTDiseaseDetails"
+                                    placeholder="if 'Yes' please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Details of previous insurance policies -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="h5 mb-0">B. Details of previous insurance policies</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <label class="form-label">Have you ever been insured by Harel or any other insurance
+                                    company?</label>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="previousInsurance" value="no"
+                                            id="noPreviousInsurance">
+                                        <label class="form-check-label" for="noPreviousInsurance">No</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="previousInsurance"
+                                            value="yes" id="yesPreviousInsurance">
+                                        <label class="form-check-label" for="yesPreviousInsurance">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="previous-insurance-details" id="previousInsuranceDetails"
+                                style="display: none;">
+                                <p class="mb-3">If yes, indicate company and the policy number/health care provider
+                                    membership number:</p>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Insurance period</label>
+                                        <div class="d-flex gap-3 align-items-center">
+                                            <div class="input-group">
+                                                <span class="input-group-text">From</span>
+                                                <input type="date" class="form-control" name="insuranceFrom">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-text">To</span>
+                                                <input type="date" class="form-control" name="insuranceTo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Company name</label>
+                                        <input type="text" class="form-control" name="insuranceCompany">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Policy No.</label>
+                                        <input type="text" class="form-control" name="policyNumber">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Membership No.</label>
+                                        <input type="text" class="form-control" name="membershipNumber">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power of Attorney -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="h5 mb-0">C. Power of Attorney</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-4">I hereby authorize my insurance agent for the Policy, Mr./Ms. <input
+                                    type="text" class="form-control d-inline-block mx-2" name="agentName"
+                                    style="width: 200px;">, to handle any matter regarding the Policy, including but not
+                                limited to the process of inclusion in the Policy, underwriting procedures, renewal or
+                                extension of the Policy for additional periods, submission of claims, changes and other
+                                actions in the Policy and so forth, in my name and for me. This includes submitting all
+                                correspondence and/or documents related to the above-said matters to "Harel" and
+                                receiving them from "Harel. I hereby give you my consent that the insurance agent serve
+                                as my delegate in any matter regarding the Policy and my permission to send the
+                                insurance agency all the details required by him, in any action related to the Policy,
+                                including details of other Policies with which I am insured at Harel, which are not
+                                necessarily policies in which the insurance agent to whom I give power of attorney in
+                                this agreement of mine is the attending agent.</p>
+
+                            <div class="row g-3 align-items-end mt-4">
+                                <div class="col-md-4">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="powerOfAttorneyDate">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="powerOfAttorneyName">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Signature of the Insured</label>
+                                    <div class="border rounded p-2 text-center bg-light">
+                                        <small class="text-muted">Signature will be collected separately</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <p class="text-muted small">For your information, copies of the correspondence and/or the documents
+                        related to the claim will in any case be sent to the your insurance agent for the policy.</p>
+                    <p class="text-center text-muted">Page 2 From 3</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="h5 mb-0">D. Declaration of Insurance Candidate</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">
+                                    I, the undersigned, hereby request of Harel Insurance Company Ltd. (herein: "the
+                                    Insurer/Company/Harel") to insure me based on the said in this proposal.
+                                    <div class="ms-4 mt-2">
+                                        <ol type="a">
+                                            <li class="mb-2">Although it is not legally required that you provide some
+                                                of the information requested in this document, the information is
+                                                essential to adding you to the policies and handling matters related to
+                                                them. The information will be collected, maintained and processed by the
+                                                Company and other companies in the Harel Group (Harel Insurance
+                                                Investments and Financial Services Ltd. and its subsidiaries) and third
+                                                parties that operate for them and/or on their behalf will use them for
+                                                the purpose of handling the policy and for other legitimate purposes,
+                                                including actuary calculations. Additional details can be found in the
+                                                privacy policy on the Company website.</li>
+                                            <li class="mb-2">I hereby declare that all the answers are correct and
+                                                complete and have been provided of my own free will.</li>
+                                            <li>The answers specified in the Health Declaration and any other
+                                                information provided to the Company, as well as the customary terms of
+                                                the Company regarding this matter shall serve as fundamental terms of
+                                                the insurance contract between you and the Company and shall constitute
+                                                an integral part thereof.</li>
+                                        </ol>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Beneficiaries in case of death</strong><br>
+                                    You may appoint beneficiaries using the form "Application for update / Change of
+                                    beneficiaries in case of death".<br>
+                                    In the absence of the beneficiary appointment, the amounts will be paid to the legal
+                                    heirs under the law, according to inheritance or probate order.
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Procedure of Joining:</strong> The company is permitted to decide whether to
+                                    accept or deny the proposal. For your information, the insurance contract will
+                                    become effective only after the Company issues written confirmation of acceptance of
+                                    the candidate for insurance. If further processing requires the clarification of
+                                    terms, underwriting and acceptance for insurance, the policy shall not be issued for
+                                    the insurance candidate and shall not become effective until completion of the
+                                    procedures for the insurance candidate.
+                                </li>
+                                <li class="list-group-item">
+                                    <ol type="a">
+                                        <li class="mb-2">I authorize my insurance agent for the policy, whose details
+                                            appear at the beginning of this proposal, to submit to Harel and to receive
+                                            from Harel in my name and for me all notices and/or documents related to the
+                                            process of underwriting and the process of joining this policy.</li>
+                                        <li class="mb-2">I agree that the insurance policy of the insurance plans
+                                            requested in this proposal be delivered to me by means of the agent whose
+                                            details appear at the beginning of this proposal.</li>
+                                        <li>If you wish to receive the policy and/or the information in the framework of
+                                            the underwriting procedure and the procedure of joining this policy
+                                            directly, as well, you may contact Harel at any time, by phoning Harel
+                                            (+2735).</li>
+                                    </ol>
+                                </li>
+                                <li class="list-group-item">
+                                    I hereby confirm that I received essential information regarding the insurance,
+                                    which included, at the very least, a description of the main elements of the
+                                    coverage, the insurance premium, the insurance period, the main insurance amounts
+                                    and the main limitations of liability, and regarding my possibility of obtaining
+                                    full details about them.
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Agreement to Use of Information and Receipt of Advertising Material</strong>
+                                    <div class="d-flex gap-3 align-items-center mb-3">
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" name="agreementToUse"
+                                                value="no" id="noAgreement">
+                                            <label class="form-check-label" for="noAgreement">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" name="agreementToUse"
+                                                value="yes" id="yesAgreement">
+                                            <label class="form-check-label" for="yesAgreement">Yes</label>
+                                        </div>
+                                    </div>
+                                    <ol type="a">
+                                        <li class="mb-3">Do you agree, beyond the requirements of the law or agreement,
+                                            that the information included in this document, as well as additional
+                                            information about you that is or will be possessed by other companies in the
+                                            Harel Group (Harel Insurance Investments and Financial Services Ltd. and its
+                                            subsidiaries) will be used by the Harel Group and/or anyone on their behalf,
+                                            including for any matter related to the other products and services of the
+                                            companies in the Harel Group (in the field of insurance, long-term savings
+                                            and finances) and in their marketing, including allowing the said companies
+                                            to inform you of products and services, and also for the purpose of handling
+                                            other policies and/or insurance products, long-term savings and financing
+                                            that you hold, processing and storing the information, and also for
+                                            additional uses associated with the above-said uses and required in order to
+                                            complete them, and for other related legitimate purposes, including by means
+                                            of transferring the information to third parties acting on behalf of and in
+                                            the name of the Harel Group.</li>
+                                        <li class="mb-3">We hereby inform you that there is a possibility that you will
+                                            receive from the Company or from other companies in the Harel Group to which
+                                            your details are provided (insofar as you consented to providing them with
+                                            your details), marketing offers and advertising materials about products and
+                                            services of the Company and/or the companies in the Harel Group, as
+                                            relevant, by means of fax, email, an automatic dialing system or short
+                                            message service (SMS) texts.</li>
+                                        <li>If you do not agree to receive marketing offers and advertising material as
+                                            said, you may inform us of your refusal or change a previous choice at any
+                                            time using the "Refusal of Advertising and Marketing Offers Form" which is
+                                            available on the Company website at www.hrl.co.il/pirsum, or by contacting
+                                            us in writing at the address: Harel Building, Health Division, Personal
+                                            Overseas and Foreign Resident Health Division, 3 Abba Hillel, POB 10951,
+                                            Ramat Gan 5252202, or by calling: 03-7547777.</li>
+                                    </ol>
+                                    <p class="mt-3 mb-0">Additional information about the privacy policy of the
+                                        institutional bodies of the Harel Group is found on the Group website at
+                                        www.harel-group.co.il</p>
+                                </li>
+                                <li class="list-group-item">
+                                    Has any insurance company ever dismissed or canceled your health insurance
+                                    application?
+                                    <div class="d-flex gap-3 align-items-center mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" name="previousCancellation"
+                                                value="no" id="noCancellation">
+                                            <label class="form-check-label" for="noCancellation">No</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" name="previousCancellation"
+                                                value="yes" id="yesCancellation">
+                                            <label class="form-check-label" for="yesCancellation">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2" id="cancellationDetails" style="display: none;">
+                                        <input type="text" class="form-control" name="cancellationDetails"
+                                            placeholder="if 'Yes' please specify">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Waiver of medical confidentiality:</strong> I, the undersigned, hereby grant
+                                    permission to the HMO and / or its medical institutions, as well as to all
+                                    physicians and / or psychiatrists, the medical institutions and other hospitals, and
+                                    / or any insurance company and / or any other institution and entity, to the extent
+                                    necessary to clarify the rights and obligations under the Insurance Policy, and / or
+                                    for the purpose of the renewal procedure of my admission to the insurance sought, to
+                                    submit to Harel, including any information held by the company and details without
+                                    exception, and in the form required by the Requesting Party(s), about my health
+                                    condition, any illness that I have had in the past and / or currently have and / or
+                                    will have in the future, and I release you from the duty to maintain medical
+                                    confidentiality and waive this confidentiality in favor of the "Requesting Party".
+                                    This waiver in writing obligates my legal estate and my legal representatives as
+                                    well as anyone who will come in my stead.
+                                </li>
+                            </ol>
+
+                            <div class="alert alert-info mt-4">
+                                The Insurance Candidate has signed this Health Condition Statement Form after having
+                                received an explanation of its content in a language in which he / she is fluent.
+                            </div>
+
+                            <div class="row g-3 align-items-end mt-4">
+                                <div class="col-md-4">
+                                    <label class="form-label">Date</label>
+                                    <input type="date" class="form-control" name="declarationDate">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Signature of Insurance Candidate</label>
+                                    <div class="border rounded p-2 text-center bg-light">
+                                        <small class="text-muted">Signature will be collected separately</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Signature of witness</label>
+                                    <div class="border rounded p-2 text-center bg-light">
+                                        <small class="text-muted">Witness signature will be collected separately</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-center text-muted mt-4">Page 3 From 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 text-end">
+                <p class="text-muted mb-3">Page 1 From 3</p>
+                <div class="d-flex gap-3 justify-content-end">
+                    <button type="button" id="whatsappShare" class="btn btn-success d-flex align-items-center gap-2">
+                        Send to WhatsApp
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
